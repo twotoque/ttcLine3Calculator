@@ -17,14 +17,304 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
 }
+
+
+.secOne {
+  background-color: #007AB6;
+}
+.cutBody{
+  margin: 0;
+  padding-bottom: 4rem;
+}
+
+.black{
+  color: #212121 !important;
+}
+
+.quoteBody{
+  background-color: #ffa821;
+  color: #212121;
+  margin: 0;
+
+}
+
+.infoBody{
+  background-color: #FFFFFF;
+  color: #212121;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight:900;
+  text-align: center;
+}
+.ValueTotalText{
+  padding-top: 8rem;
+  font-weight:600;
+  padding-bottom: 2rem;
+
+}
+.secTwo{
+  background-color: #ffa821;
+  padding: 12rem;
+}
+
+.GradTrans{
+  background-image: linear-gradient(180deg, #007AB6, #ffa821);
+  padding: 12rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+
+.interiorImg{
+  border-radius:4rem;
+}
+
+.TMUquote{
+  text-align: center;
+  font-size: 2.43rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
+  margin-bottom: .7rem;
+}
+
+.TMUquoteCredit{
+  margin:0;
+  margin-bottom: 2rem;
+}
+.TMUbold{
+  font-weight: bolder;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.actionText{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.noMarginBelow{
+  margin-bottom: 0 !important;
+}
+
+.routeName{
+  font-size:3rem;
+}
+
+.searchContainer{
+  
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  outline: #FFFFFF;
+  padding: 1rem;
+  height: 3rem;
+  width: 50vw;
+  text-align: left;
+  border: 0;
+  font-size: 1.5rem;
+  color: #212121;
+}
+
+.noteMargin{
+  margin-top: 3rem;
+}
+.noCuts {
+  text-align: center;
+  margin: 4rem;
+}
+.searchSuggestion{
+  margin-top: 0rem;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  margin-bottom: 0rem;
+}
+
+.creditContainer {
+  align-items: stretch !important;
+}
+
+.creditContainerMargin{
+  margin-right: 15rem;
+  margin-left: 15rem;
+}
+
+.marginZero{
+  margin: 0rem !important;
+}
+
+.interiorContainer {
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #C71C21;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+
+.topContainer {
+  text-align: left;
+  background-color: #212121;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  margin-right: 15rem;
+  margin-left: 15rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: start;
+  padding-left: 2rem;
+}
+
+
+.topContainerBeta {
+  background-color: #6300E5 !important;
+  margin-bottom: 1rem;
+}
+
+.interiorContainerFlexBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .interiorContainerFlexBody {  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+}
+
+.interiorContainerFlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interiorContainerElement{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  line-height: 0.93;
+}
+
+.interiorContainerTitle {
+  margin-bottom: .2rem;
+}
+.interiorContaineTitleTime{
+  margin: 0rem;
+}
+.masterContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 100px);  
+  grid-template-rows: repeat(2, 50px);  
+
+}
+
+.footerLogos{
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  justify-content: center;
+  
+}
+.footer{
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #212121;
+  color: #FFFFFF;
+}
+.text{
+  margin: 2rem;
+}
+.containerRouteMaster {          
+  display: grid;  
+  align-items: center;
+  grid-gap: 5px;  
+  grid-template-rows: repeat(5, auto-fit);  
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+a.button2{
+  text-decoration: none;
+}
+
+.budgetContain:hover{
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color:#212121;
+}
+
+
+
+a.button1{ 
+  border-radius: 1rem;
+  background-color: #C71C21;
+  border: 0.1em solid #FFFFFF;
+  padding: 0.35em 1.2em;
+  text-decoration:none;
+  font-size: 1.3vw;
+  margin: 3rem;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  a.button1{
+      font-size: 2.1vw;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+  a.button1{
+      font-size: 2.2vw;
+  }
+}
+
+
+a.button1:hover{ 
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  border: 0.1em solid #C71C21;
+  color: #C71C21;
+  font-weight: 700;
+}
+
+.TTCridersFooterLogo{
+  margin-right:50px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .containerRouteMaster {  
+      grid-template-columns: repeat(auto-fit, 33%);
+  }
+}
+
 
 @layer utilities {
   .text-balance {

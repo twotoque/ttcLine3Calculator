@@ -10,9 +10,22 @@ const Post = ({ title, content }) => {
 
   return (
     <div>
-      <h1>Hi!</h1>
-      <p>Scarboroughians have lost {valueTotal} minutes since the shutdown of the RT.</p>
-    </div>
+      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"></link>
+      <div class="secOne">
+          <div class="ValueTotalText">
+            <h2>Scarboroughians have lost</h2>
+            <h1>{valueTotal} minutes</h1>
+            <h2>since the closure of Line 3.</h2>
+          </div>
+          <img src="/tower.svg"></img>
+          <div class="GradTrans">
+          </div>
+          <div class="secTwo">
+            
+          </div>
+          
+        </div>
+      </div>
   );
 };
 
