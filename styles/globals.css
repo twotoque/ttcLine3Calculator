@@ -20,6 +20,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 
@@ -56,17 +57,60 @@ h1 {
 .ValueTotalText{
   padding-top: 8rem;
   font-weight:600;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 
+}
+.towercontain{
+  margin-top: -20rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.Line3Rail {
+  position: relative;
+  height: 3vw;
+  width : 100%;
+  margin-top: 8.7vw;
+  background-color: #585858;
+}
+.Line3Train {
+  position: relative;
+  right: -350px;
+  left: 350px;
+  width: 85vw;
+  transition: left 0.5s ease; 
+  float:right;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+  transform: scaleX(-1);
+}
+.tower{
+  width: 18vw;
+  padding-top: 13rem;
+  margin-bottom: -10rem;
 }
 .secTwo{
   background-color: #ffa821;
   padding: 12rem;
 }
 
+.image-container {
+  padding-left: 20px; 
+  transition: padding-left 0.5s ease; 
+}
+
 .GradTrans{
+  margin-top: -20rem;
   background-image: linear-gradient(180deg, #007AB6, #ffa821);
-  padding: 12rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 
 }
 

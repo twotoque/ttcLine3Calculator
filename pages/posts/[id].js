@@ -8,16 +8,52 @@ const Post = ({ title, content }) => {
     setValueTotal(content.reduce((total, value) => total + parseInt(value, 10) || 0, 0)); //Convert variable "value" from str to int, update variable "valueTotal" when content changes
   }, [content]);
 
+  useEffect(() => {
+    let scrollPosition = 0;
+    const handleScroll = () => {
+      const newScrollPosition = window.scrollY;
+
+      // Delay 200ms
+      setTimeout(() => {
+        // Move the image to the left if scrolling down
+        if (newScrollPosition > scrollPosition && newScrollPosition < 500) {
+          document.querySelector('.Line3Train').style.left = '-350px'; 
+        }
+        // Move the image to the right if scrolling up
+        else {
+          document.querySelector('.Line3Train').style.left = '350px'; 
+        }
+
+        scrollPosition = newScrollPosition;
+      }, 200);
+    };
+
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <div>
       <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"></link>
+      
       <div class="secOne">
           <div class="ValueTotalText">
             <h2>Scarboroughians have lost</h2>
             <h1>{valueTotal} minutes</h1>
             <h2>since the closure of Line 3.</h2>
           </div>
-          <img src="/tower.svg"></img>
+          <div>
+            <div class="towercontain">
+              <img class = "tower left" src="/tower.svg"></img>
+              <img class = "tower right" src="/tower.svg"></img>
+            </div>
+            <img class="Line3Train" id ="Line3Train" src="/Line3Train.svg"></img>
+            <div class="Line3Rail"></div>
+          </div>
+          
           <div class="GradTrans">
           </div>
           <div class="secTwo">
@@ -49,5 +85,7 @@ export async function getServerSideProps({ query }) {
     },
   };
 }
+
+
 
 export default Post;
