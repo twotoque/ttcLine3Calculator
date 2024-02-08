@@ -1,11 +1,41 @@
-body {
-  font-family: 'Titillium Web', sans-serif;
-  margin: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+p, li{
+  font-weight:600;
 }
 
-.cutBody{
-  background-color: #C71C21;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
   color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+
+.secOne {
+  background-color: #1F99D5;
+}
+.cutBody{
   margin: 0;
   padding-bottom: 4rem;
 }
@@ -28,13 +58,113 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-weight:900;
   text-align: center;
 }
 
+h1.minutesText{
+  font-size: 6rem;
+}
+.pbold{
+  font-weight: 700 !important;
+}
+.ValueTotalText{
+  padding-top: 8rem;
+  font-weight:600;
+  z-index: 4;
+  position: relative;
+  padding-left: 14rem;
+  padding-right: 14rem;
+
+}
+.AdjLineHeight{
+  padding-top: 2rem;
+  line-height: 6rem;
+}
+.heading {
+  font-weight:600;
+  z-index: 4;
+  position: relative;
+
+}
+
+.noHead{
+  padding-top: 3vw !important;
+}
+
+.blackPriority {
+  padding-top: 0 !important;
+  color: #3A3A3A !important;
+}
+.towercontain{
+  margin-top: -20rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.Line3Rail {
+  position: relative;
+  height: 3vw;
+  width : 100%;
+  margin-top: 8.7vw;
+  background-color: #585858;
+}
+.Line3Pole {
+  position: relative;
+  height: 4vw;
+  width : 3vw;
+  background-color: #585858;
+}
+.Line3Train {
+  position: relative;
+  right: -350px;
+  left: 350px;
+  width: 85vw;
+  transition: left 0.5s ease; 
+  float:right;
+}
+.Line3PolePlacement{
+  display:flex;
+  column-gap: 18vw;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+  transform: scaleX(-1);
+}
+.tower{
+  width: 18vw;
+  padding-top: 13rem;
+  margin-bottom: -10rem;
+}
+.secTwo{
+  background-color: #ebbc13;
+  
+}
+
+.image-container {
+  padding-left: 20px; 
+  transition: padding-left 0.5s ease; 
+}
+
+.GradTrans{
+  margin-top: -20rem;
+  background-image: linear-gradient(180deg, #1F99D5, #ffa821, #ebbc13);
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+
+}
+
 h2 {
   font-size: 2rem;
+  line-height: 1.3rem;
 }
 
 a {
@@ -43,18 +173,35 @@ a {
 
 
 .interiorImg{
-  border-radius:4rem;
+  border-radius: 1rem;
+  width: 38%;
+  align: center;
 }
 
 .TMUquote{
   text-align: center;
-  font-size: 2.43rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-top: 2rem;
-  margin-bottom: .7rem;
+  line-height: 3rem;
 }
 
+.ttcridersLogo{
+  height: 3rem;
+}
+
+img.centre {
+  display: block !important;
+  margin: 0 auto  !important;
+}
+
+.quotePadding{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
 .TMUquoteCredit{
   margin:0;
   margin-bottom: 2rem;
@@ -158,9 +305,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
   margin-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
 }
+
 
 @media only screen and (max-width: 1000px) {
   .interiorContainerFlexBody {  
@@ -198,23 +349,34 @@ a {
   grid-template-rows: repeat(2, 50px);  
 
 }
-
-.footerLogos{
-  display: flex;
-  align-items: center;
-  padding-top: 1rem;
-  justify-content: center;
-  
+.footerText{
+  text-align: center;
+  padding-left: 2rem;
 }
+
 .footer{
   padding-top: 3rem;
+  padding-left: 14rem;
+  padding-right: 14rem;
   padding-bottom: 1rem;
   text-align: center;
-  background-color: #212121;
+  align-items: center;
+  background-color: #3A3A3A;
   color: #FFFFFF;
 }
 .text{
   margin: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #313131;
+}
+
+.textBlue{
+  margin: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #FFFFFF;
+
 }
 .containerRouteMaster {          
   display: grid;  
@@ -224,9 +386,6 @@ a {
   margin-top: 4rem;
   margin-left: 2rem;
   margin-right: 2rem;
-}
-a.button2{
-  text-decoration: none;
 }
 
 .budgetContain:hover{
@@ -238,23 +397,44 @@ a.button2{
 
 
 a.button1{ 
+  margin-top: 2rem;
   border-radius: 1rem;
-  background-color: #C71C21;
-  border: 0.1em solid #FFFFFF;
-  padding: 0.35em 1.2em;
-  text-decoration:none;
+  background-color: #1f99d5;
+  border: 0.25em solid #FFFFFF;
+  padding: 0.2em 1.2em;
+  text-decoration:n one;
   font-size: 1.3vw;
-  margin: 3rem;
   font-weight: 700;
+  display: inline-block;
+}
+
+
+a.button2{ 
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #ebbc13;
+  border: 0.25em solid #3a3a3a;
+  padding: 0.2em 1.2em;
+  text-decoration:n one;
+  color: #3a3a3a !important;
+  font-size: 1.3vw;
+  font-weight: 700;
+  display: inline-block;
 }
 @media (max-width: 800px) {
   a.button1{
       font-size: 2.1vw;
   }
+  a.button2{
+    font-size: 2.2vw;
+}
 }
 
 @media (min-width: 800px) and (max-width: 1200px){
   a.button1{
+      font-size: 2.2vw;
+  }
+  a.button2{
       font-size: 2.2vw;
   }
 }
@@ -263,17 +443,28 @@ a.button1{
 a.button1:hover{ 
   border-radius: 1rem;
   background-color: #FFFFFF;
-  border: 0.1em solid #C71C21;
-  color: #C71C21;
+  border: 0.25em solid #1f99d5;;
+  color: #1f99d5;;
   font-weight: 700;
 }
 
-.TTCridersFooterLogo{
-  margin-right:50px;
+a.button2:hover{ 
+  border-radius: 1rem;
+  background-color: #3a3a3a;
+  border: 0.25em solid #ebbc13;;
+  color: #ebbc13 !important;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 1000px) {
   .containerRouteMaster {  
       grid-template-columns: repeat(auto-fit, 33%);
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
