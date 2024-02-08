@@ -122,7 +122,13 @@ h1.minutesText{
   position: relative;
   right: -350px;
   left: 350px;
-  width: 85vw;
+  transition: left 0.5s ease; 
+  float:right;
+}
+.Line3Train-mobile {
+  position: relative;
+  right: -350px;
+  left: 350px;
   transition: left 0.5s ease; 
   float:right;
 }
@@ -322,11 +328,6 @@ img.centre {
   }
 }
 
-.interiorContainerFlex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .interiorContainerElement{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -421,13 +422,50 @@ a.button2{
   font-weight: 700;
   display: inline-block;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   a.button1{
       font-size: 2.1vw;
   }
   a.button2{
     font-size: 2.2vw;
+  }
+
+  .tower-mobile{
+    display: flex;
+  }
+
+  .tower-desktop{
+    display: none;
+  }
+
+  .Line3Train{ 
+    display: none;
+  }
+  .Line3Train-mobile{ 
+    display: flex;
+  }
+
 }
+
+@media (min-width: 1000px) {
+  .tower-mobile{
+    display: none;
+  }
+  .Line3Train{ 
+    display: flex;
+  }
+  .Line3Train-mobile{ 
+    display: none;
+  }
+
+  
+  .tower-desktop{
+    display: flex;
+  }
+
+  .Line3Train{ 
+    width: 85vw;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1200px){

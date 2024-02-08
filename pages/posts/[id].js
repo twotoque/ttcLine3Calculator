@@ -18,11 +18,11 @@ const Post = ({ title, content }) => {
       setTimeout(() => {
         // Move the image to the left if scrolling down
         if (newScrollPosition > scrollPosition && newScrollPosition > 150) {
-          document.querySelector('.Line3Train').style.left = '-350px'; 
+          document.querySelector('.Line3TrainAnimate').style.left = '-350px'; 
         }
         // Move the image to the right if scrolling up
         else if (newScrollPosition < scrollPosition && newScrollPosition < 150){
-          document.querySelector('.Line3Train').style.left = '350px'; 
+          document.querySelector('.Line3TrainAnimate').style.left = '350px'; 
         }
 
         scrollPosition = newScrollPosition;
@@ -48,11 +48,16 @@ const Post = ({ title, content }) => {
             <a href="https://www.ttcriders.ca/servicecuts" class="button1">Share your experiences with shuttle buses!</a>
           </div>
           <div>
-          <div class="towercontain">
+          <div class="towercontain tower-desktop">
             <img class = "tower left" src="/tower.svg"></img>
             <img class = "tower right" src="/tower.svg"></img>
           </div>
-          <img class="Line3Train" id ="Line3T//rain" src="/Line3Train.svg"></img>
+          <div class="towercontain tower-mobile">
+            <img class = "tower left" src="/tower-mobile.svg"></img>
+            <img class = "tower right" src="/tower-mobile.svg"></img>
+          </div>
+          <img class="Line3TrainAnimate Line3Train" id ="Line3T//rain" src="/Line3Train.svg"></img>
+          <img class="Line3TrainAnimate Line3Train-mobile" id ="Line3T//rain" src="/Line3Train-mobile.svg"></img>
           <div class="Line3Rail"></div>
           <div class="Line3PolePlacement">
             <div class="Line3Pole"></div>
