@@ -1,1 +1,1 @@
-Project loosely based on (https://github.com/twotoque/ttcCuts)[Arizona] built on React and Next.js. 
+Project loosely based on [Arizona](https://github.com/twotoque/ttcCuts) built on React and Next.js. 
