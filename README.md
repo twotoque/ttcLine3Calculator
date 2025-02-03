@@ -1,1 +1,1 @@
-Project loosely based on the [TTC bus delay website](https://github.com/twotoque/ttcCuts) built on React and Next.js, and the Google Sheets API. Video of it in action: [https://www.youtube.com/watch?v=l6f2uXEI55s].
+Project loosely based on the [TTC bus delay website](https://github.com/twotoque/ttcCuts) built on React and Next.js, and the Google Sheets API. Video of it in action: https://www.youtube.com/watch?v=l6f2uXEI55s.
